@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: 'Mulish', sans-serif;;
+}
+
+#page {
+  width: 43rem;
+  margin: auto;
+  text-align: center;
+}
+
+header h1, legend {
+  color: #B52184;
+
+  font-size: 3.2rem;
+  font-weight: 900;
+  margin: 1.7rem 0 .5rem;
+  line-height: 4rem;
+
+  animation: opacity .5s;
+}
+
+header p {
+  color: #312D64;
+  
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 3.5rem;
+
+  animation: opacity .5s;
+}
+
+header .seta, header img {
+  animation: opacity .5s;
+}
+
+main .sections {
+  background: #312D64;
+  margin: 7rem 0;
+  padding: 5.2rem 5.1rem;
+  display: flex;
+  flex-direction: column; 
+  gap: 5rem;
+}
+
+section {
+  background: #fff;
+  height: 35.7rem;
+  border-radius: 1.9rem;
+  box-shadow: 0rem 1.3rem 1.4rem 0rem rgba(0, 0, 0, 0.25);
+  padding: 2.6rem;
+  text-align: start;
+}
+
+section:hover {
+  transform: scale(1.01);
+  transition-duration: 50ms;
+  transition-timing-function: ease-in;
+}
+
+section h2 {
+  color: #B52184;
+
+  font-size: 2.9rem;  
+  font-weight: 900;
+  margin: 3.3rem 0 1.5rem;
+}
+
+section p {
+  color: #312D64;
+
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  padding: 0 4.1rem;
+}
+
+input, textarea {
+  height: 4.8rem;
+  border-radius: 16px;
+  border: .2rem solid #312D64;
+  padding: 1.2rem 1.4rem;
+  width: 34.9rem;
+
+  color: #312D64;
+
+  font-family: Mulish;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 100%; 
+}
+
+textarea {
+  width: 34.8rem;
+}
+
+button {
+  height: 4.5rem;
+  width: 16rem;
+  padding: 1.6rem;
+  margin-top: 2.2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  border: none;
+  border-radius: 16px;
+  background: linear-gradient(96deg, #343193 0%, #302C63 99.68%);
+
+  color: var(--Neutral-Colors-White, #FFF);
+  font-family: Mulish;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.4rem;
+}
+
+button:hover {
+  cursor: pointer;
+  background: linear-gradient(96deg, #22205e 0%, #302C63 99.68%);
+}
+
+.star {
+  display: none;
+}
+
+footer {
+  background: linear-gradient(96deg, #343193 0%, #302C63 99.68%);
+  height: 78px;
+  display: flex;
+  align-items: center;
+  margin-top: 6.5rem;
+}
+
+footer p {
+  margin: auto;
+
+  color: #FFF;  
+  font-size: 1.9rem;
+  font-style: normal;
+  font-weight: 600;
+}
+
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+}
+
+/*RESPOSIVIDADE*/
+@media (min-width: 1024px) {
+  #page {
+    width: 100%;
+  }
+  
+  header {
+    height: 81.6rem;
+    
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+  
+  .ajuste2 {
+    margin-top: 23rem;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 11rem;
+    align-items: start;
+  }
+  
+  .texto {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .texto h1 {
+    font-size: 5.8rem;
+    margin-bottom: .9rem;
+    line-height: 6rem;
+  }
+
+  .texto p {
+    font-size: 3.2rem;
+  }
+
+  header img {
+    max-width: 72rem;
+    max-height: 70rem;
+  }
+
+  header .seta {
+    height: 10rem;
+  }
+
+  main .sections {
+    flex-direction: row;
+    gap: 6rem;
+    height: 57.6rem;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  section {
+    max-width: 36.6rem;
+    height: 44.8rem;
+  }
+  
+  section h2 {
+    font-size: 3.4rem;
+  }
+
+  section p {
+    font-size: 1.9rem;
+  }
+
+  .ajuste {
+    display: flex;
+    padding-left: 11rem;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10rem;
+  }
+  
+  fieldset {
+    padding: 0;
+    text-align: start;
+  }
+  
+  legend {
+    font-size: 4rem;
+  }
+
+  input, textarea {
+    width: 59rem;
+  }
+  
+  button {
+    height: 5.5rem;
+    width: 20rem;  
+    font-size: 1.8rem;
+  }
+  .star {
+    display: inline;
+  }
+  
+  footer {
+    margin-top: 0;
+  }
+
+}
